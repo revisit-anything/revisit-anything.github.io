@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<div class="column has-text-centered">
+  <!-- <h1 class="title is-2 publication-title">Revisit Anything: Visual Place Recognition via Image Segment Retrieval</h1> -->
+  <!-- <h2 class="subtitle is-4 publication-venue">European Conference on Computer Vision (ECCV) 2024</h2> -->
+  <div class="is-size-6 publication-authors">
+    <!-- Author names here -->
+  </div>
+  <!-- Rest of the content -->
+</div>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Revisit Anything</title>
+    <!-- <h2 class="subtitle is-4 publication-venue">European Conference on Computer Vision (ECCV) 2024</h2> -->
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
     <link rel="stylesheet" href="static/css/bulma.min.css">
+    <!-- <link rel="stylesheet" -->
+            <!-- href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="static/css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script defer src="static/js/index.js"></script>
 </head>
 <body>
 
-    <section class="hero">
+    <!-- <section class="hero"> -->
+    <section class="hero" style="background-color: #4a0e4e0a;">
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
                         <h1 class="title is-2 publication-title">Revisit Anything: Visual Place Recognition via Image Segment Retrieval</h1>
+                        <h2 class="subtitle is-4 publication-venue">European Conference on Computer Vision (ECCV) 2024</h2>
                         <div class="is-size-6 publication-authors">
-                            <span class="author-block">Kartik Garg<sup>*1</sup>,</span>
-                            <span class="author-block">Sai Shubodh Puligilla<sup>*2</sup>,</span>
-                            <span class="author-block">Shishir Kolathaya<sup>1</sup>,</span>
-                            <span class="author-block">Madhava Krishna<sup>2</sup>,</span>
-                            <span class="author-block">and Sourav Garg<sup>3</sup></span>
+                            <span class="author-block"><a href="KARTIK_WEBSITE">Kartik Garg</a><sup>*1</sup>,</span>
+                            <span class="author-block"><a href="SAI_WEBSITE">Sai Shubodh Puligilla</a><sup>*2</sup>,</span>
+                            <span class="author-block"><a href="SHISHIR_WEBSITE">Shishir Kolathaya</a><sup>1</sup>,</span>
+                            <span class="author-block"><a href="MADHAVA_WEBSITE">Madhava Krishna</a><sup>2</sup>,</span>
+                            <span class="author-block">and <a href="SOURAV_WEBSITE">Sourav Garg</a><sup>3</sup></span>
                         </div>
 
                         <div class="is-size-6 publication-authors">
-                            <span class="author-block"><sup>1</sup>Indian Institute of Science (IISc), Bengaluru, India</span>
-                            <span class="author-block"><sup>2</sup>International Institute of Information Technology, Hyderabad, India</span>
+                            <span class="author-block"><sup>1</sup>Indian Institute of Science (IISc), Bengaluru, India,</span>
+                            <span class="author-block"><sup>2</sup>International Institute of Information Technology, Hyderabad, India,</span>
                             <span class="author-block"><sup>3</sup>University of Adelaide, Australia</span>
                         </div>
 
@@ -94,6 +111,39 @@
             </div>
         </div>
     </section>
+
+
+    <section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+        <div class="video-container">
+            <video id="teaser" controls loop playsinline width="100%">
+            <source src="data/method_viz/teaser.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h2 class="subtitle has-text-centered">
+            Revisit Anything enables visual place recognition (VPR) anywhere, anytime and under anyview.
+        </h2>
+        </div>
+    </div>
+    </section>
+
+
+    <section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+            <p>
+                Accurately recognizing a revisited place is crucial for embodied agents to localize and navigate. This requires visual representations to be distinct, despite strong variations in camera viewpoint and scene appearance. Existing visual place recognition pipelines encode the whole image and search for matches. This poses a fundamental challenge in matching two images of the same place captured from different camera viewpoints: the similarity of what overlaps can be dominated by the dissimilarity of what does not overlap. We address this by encoding and searching for image segments instead of the whole images. We propose to use open-set image segmentation to decompose an image into 'meaningful' entities (i.e., things and stuff). This enables us to create a novel image representation as a collection of multiple overlapping subgraphs connecting a segment with its neighboring segments, dubbed SuperSegment. Furthermore, to efficiently encode these SuperSegments into compact vector representations, we propose a novel factorized representation of feature aggregation. We show that retrieving these partial representations leads to significantly higher recognition recall than the typical whole image based retrieval. Our segments-based approach, dubbed SegVLAD, sets a new state-of-the-art in place recognition on a diverse selection of benchmark datasets, while being applicable to both generic and task specialized image encoders. Finally, we demonstrate the potential of our method to "revisit anything" by evaluating our method on an object instance retrieval task, which bridges the two disparate areas of research: visual place recognition and object-goal navigation, through their common aim of recognizing goal objects specific to a place.
+            </p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
 
     <section class="section">
         <div class="container is-max-desktop">
