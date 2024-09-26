@@ -48,6 +48,7 @@ a:hover {
 
 .publication-venue {
     /* color: #555; */
+    text-align: center;
     color: #8d5603;
     width: fit-content;
     font-weight: bold;
@@ -100,10 +101,10 @@ a:hover {
 .publication-body img {
 }
 
-.publication-venue {
+/* .publication-venue {
     text-align: center;
     width: 100%;
-}
+} */
 
 .hero.teaser .container {
     display: flex;
@@ -149,7 +150,7 @@ a:hover {
     padding: 3rem 1.5rem;
 }
 
-/* Remove any previous border on sections */
+/* Remove any previous border on sections yes */
 .section {
     border-top: none;
 }
