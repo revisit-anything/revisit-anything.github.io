@@ -29,10 +29,11 @@ a:hover {
 /* Style the buttons */
 .button.is-dark {
     background-color: #4a0e4e;
-    color: white;
+    color: #e7be7f;
 }
 .button.is-dark:hover {
     background-color: #5f1262;
+    color: #ffa726;
 }
 
 
